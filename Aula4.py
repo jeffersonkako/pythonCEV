@@ -1,0 +1,6 @@
+n = float(input('Digite um valor:'))
+n2 = int(input('Digite um valor:'))
+print(n)
+print(n2)
+print(type(n))
+print(type(n2))
