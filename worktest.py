@@ -2,6 +2,7 @@ cadastroF = []
 cadastroT = []
 temp = {}
 idF = idT = 0
+
 def cadastroFerramentas(choice):
     temp['id'] = idF
     temp['Ferramenta'] = str(input('Ferramenta: '))
@@ -13,9 +14,13 @@ def cadastroFerramentas(choice):
     temp['Tipo de Ferramenta'] = str(input('Tipo de Ferramenta: '))
     temp['Material da Ferramenta'] = str(input('Material da Ferramenta: '))
     temp['Tempo Maximo de Reserva'] = str(input('Tempo Maximo de Reserva: '))
+    print('=' * 30)
+    print('[Ferramenta cadastradas]')
+    for k, v in temp.items():
+        print(f'- {k}: {v}')
     cadastroF.append(temp.copy())
     temp.clear()
-    print(cadastroF)
+
 def cadastroTecnicos(choice):
     temp['id'] = idT
     temp['Nome'] = str(input('Nome: '))
@@ -23,9 +28,13 @@ def cadastroTecnicos(choice):
     temp['Contato:'] = str(input('Telefone: '))
     temp['Turno'] = str(input('Turno: '))
     temp['Equipe:'] = str(input('Equipe: '))
+    print('=' * 30)
+    print('[Técnico cadastrado]')
+    for k, v in temp.items():
+        print(f'- {k}: {v}')
     cadastroT.append(temp.copy())
     temp.clear()
-    print(cadastroT)
+
 while True:
     print('=' * 30)
     choice = int(input('[MENU] \n[1] Cadastro de Ferramentas \n[2] Cadastro de Técnicos\n[3] Sair\n>>> '))
