@@ -1,3 +1,3 @@
 # pythonCEV
 
-<b> Repositorio do curso de python. <b>
+<b> Repositório do curso de python. <b>
